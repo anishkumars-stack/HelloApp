@@ -1,13 +1,13 @@
 public class HelloApp {
     public static void main(String[] args) {
-        String name;
 
         if (args.length > 0) {
-            name = args[0];
+            for (int i = 0; i < args.length; i++) {
+                System.out.println("Hello " + args[i]);
+            }
         } else {
-            name = "World";
+            System.out.println("Hello World");
         }
 
-        System.out.println("Hello " + name);
     }
 }
