@@ -2,15 +2,7 @@ public class HelloApp {
     public static void main(String[] args) {
 
         if (args.length > 0) {
-            String result = "";
-
-            for (String name : args) {
-                result += name + ", ";
-            }
-
-            // Remove last ", "
-            result = result.substring(0, result.length() - 2);
-
+            String result = String.join(", ", args);
             System.out.println("Hello, " + result + "!");
         } else {
             System.out.println("Hello, World!");
